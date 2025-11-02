@@ -20,6 +20,8 @@ class StreetViewDataset(Dataset):
             self.label_map[country_name] = idx
             code_path = os.path.join(self.root_dir, code)
             for fname in os.listdir(code_path):
+                if fname.lower().endswith('.md'):
+                    continue
                 img_path = os.path.join(code_path, fname)
                 self.samples.append((img_path, idx))
 

@@ -1,5 +1,34 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,venv,python,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,venv,python,macos
+# Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,venv,virtualenv,macos,linux,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,venv,virtualenv,macos,linux,windows
+
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### macOS ###
 # General
@@ -113,11 +142,8 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
 
 # IPython
-profile_default/
-ipython_config.py
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
@@ -218,26 +244,37 @@ pyrightconfig.json
 pyvenv.cfg
 pip-selfcheck.json
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
 
-# Local History for Visual Studio Code
-.history/
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# Built Visual Studio Code Extensions
-*.vsix
+# Dump file
+*.stackdump
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+# Folder config file
+[Dd]esktop.ini
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,venv,python,macos
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,venv,virtualenv,macos,linux,windows
 
 /data
 /model

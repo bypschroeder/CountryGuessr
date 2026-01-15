@@ -1,8 +1,8 @@
-path: E:/DataMiningProj/street_signs/dataset
+path: E:/DataMiningProj/Git_project/street_signs/dataset
 
 train: images/train
 val: images/val
 
 nc: 1
 names:
-  0: streetsign
+  - streetsign

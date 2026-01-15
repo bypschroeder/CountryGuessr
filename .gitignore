@@ -290,3 +290,5 @@ $RECYCLE.BIN/
 /street_signs/mtsd_v2_fully_annotated
 /street_signs/street_signs
 /street_signs/ViTModel
+/street_signs/crops_per_label_val
+/street_signs/runs

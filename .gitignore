@@ -280,3 +280,15 @@ $RECYCLE.BIN/
 /model
 /runs
 /test_images
+
+/street_signs/images
+/street_signs/annotations
+/street_signs/crops_per_label
+/street_signs/dataset
+/street_signs/An90x89nHvauCK1fqMJ8110KeTjNo5Si7rzhvwIMCu5xI9_GhWBGOIXaFvu6o53NuNpBMzdC9qsjAVR8sLv8m6WoFfn6Qd4NjMYKNW4NCKVp6gx3MhZtwf3cZR94wFhou5lPI0hGUw.zip
+/street_signs/An_WKGcw-ICowA_xAgTEU_E-pAYdybyzT-9Pwi8JtelanWnNRKONV1DTAZPEAsGNDWlFpYDi16km1stDN47ip-quE77cfkv3aERdMIRahysGgspb6DlCgrabPSTFJI3tZ9EMRatRC6ZmjQytVcY.zip
+/street_signs/mtsd_v2_fully_annotated
+/street_signs/street_signs
+/street_signs/ViTModel
+/street_signs/crops_per_label_val
+/street_signs/runs

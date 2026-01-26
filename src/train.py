@@ -94,7 +94,6 @@ def save_checkpoint(model, optimizer, epoch, label_map, train_loss=None, val_los
         "label_map": label_map
     }
     
-    # Optionally add metrics and seed if provided
     if train_loss is not None:
         checkpoint['train_loss'] = train_loss
     if val_loss is not None:

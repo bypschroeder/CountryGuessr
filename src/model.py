@@ -1,14 +1,15 @@
 import torch.nn as nn
-import torchvision.models as models
+from torchvision.models import resnet50, ResNet50_Weights
 import timm
 
 
 class ResNet50Model(nn.Module):
-    def __init__(self, num_classes, pretrained=True):
+    def __init__(self, num_classes):
         super(ResNet50Model, self).__init__()
 
         # Load ResNet50 as baseline model
-        self.resnet50 = models.resnet50(pretrained=pretrained)
+        weights = ResNet50_Weights.DEFAULT
+        self.resnet50 = resnet50(weights=weights)
 
         # Replace final layer
         self.resnet50.fc = nn.Linear(self.resnet50.fc.in_features, num_classes)
@@ -32,16 +33,3 @@ class ViTModel(nn.Module):
 
     def forward(self, x):
         return self.vit(x)
-
-class SwinTransformerModel(nn.Module):
-    def __init__(self, num_classes, pretrained=True):
-        super(SwinTransformerModel, self).__init__()
-
-        # Create Swin Transformer base model
-        self.swin = timm.create_model("swin_base_patch4_window7_224", pretrained=pretrained)
-
-        # Replace classification head
-        self.swin.head = nn.Linear(self.swin.head.in_features, num_classes)
-
-    def forward(self, x):
-        return self.swin(x)
